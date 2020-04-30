@@ -19,7 +19,7 @@ function App() {
         valueHandler={(e) => console.log(e)}
       />
       <div className="bottomText" style={{ marginTop: "30px" }}>
-        made by react developer {" (sakyb naqash)"}.
+        made by react developer {" (murtaz25raina)"}.
       </div>
     </div>
   );
