@@ -5,6 +5,9 @@ import styled from "styled-components";
 
 const RangeWrapper = styled.div`
   width: 540px;
+  @media (max-width: 400px) {
+    width: 300px;
+  }
 `;
 
 const BottomDataView = styled.div`
@@ -17,7 +20,7 @@ const TopView = styled.div`
 `;
 const MinBox = styled.span`
   position: absolute;
-  left: ${props => props.left};
+  left: ${(props) => props.left};
   margin-left: -7px;
   top: 7px;
   white-space: nowrap;
@@ -25,7 +28,7 @@ const MinBox = styled.span`
 
 const MaxBox = styled.span`
   position: absolute;
-  left: ${props => props.left};
+  left: ${(props) => props.left};
   margin-left: -13px;
   top: 7px;
   white-space: nowrap;
@@ -33,7 +36,7 @@ const MaxBox = styled.span`
 
 const MinBoxTop = styled.span`
   position: absolute;
-  left: ${props => props.left};
+  left: ${(props) => props.left};
   bottom: 4px;
   color: grey;
   opacity: 0.8;
@@ -42,14 +45,14 @@ const MinBoxTop = styled.span`
 
 const MaxBoxTop = styled.span`
   position: absolute;
-  left: ${props => props.left};
+  left: ${(props) => props.left};
   bottom: 4px;
   color: grey;
   opacity: 0.8;
   margin-left: -13px;
 `;
 
-const RangeSlider = props => {
+const RangeSlider = (props) => {
   const [start, setStart] = useState(props.min);
   const [end, setEnd] = useState(props.max);
   const [startLeft, setStartLeft] = useState(0);
@@ -66,7 +69,7 @@ const RangeSlider = props => {
     setEndLeft(slider2style);
   }, [props, start, end]);
 
-  const onChangeHandler = a => {
+  const onChangeHandler = (a) => {
     setStart(a[0]);
     setEnd(a[1]);
   };
@@ -93,7 +96,7 @@ const RangeSlider = props => {
             height: "20px",
             top: "2px",
             boxShadow: "none",
-            border: "none"
+            border: "none",
           },
           {
             backgroundColor: props.dotColor,
@@ -101,8 +104,8 @@ const RangeSlider = props => {
             height: "20px",
             top: "2px",
             boxShadow: "none",
-            border: "none"
-          }
+            border: "none",
+          },
         ]}
         railStyle={{ backgroundColor: props.outerColor }}
       />
@@ -124,6 +127,6 @@ RangeSlider.defaultProps = {
   dotColor: "blue",
   rangeColor: "blue",
   outerColor: "#c5c3c3",
-  valueHandler: e => console.log(e)
+  valueHandler: (e) => console.log(e),
 };
 export default RangeSlider;

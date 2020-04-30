@@ -5,7 +5,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <div style={{ marginBottom: "30px" }}>
+      <div className="topText" style={{ marginBottom: "30px" }}>
         Hi, this is a Range Slider Component. Hope you like it :)
       </div>
       <RangeSlider
@@ -18,7 +18,7 @@ function App() {
         outerColor="#c5c3c3"
         valueHandler={(e) => console.log(e)}
       />
-      <div style={{ marginTop: "30px" }}>
+      <div className="bottomText" style={{ marginTop: "30px" }}>
         made by react developer {" (murtaz25raina)"}.
       </div>
     </div>
