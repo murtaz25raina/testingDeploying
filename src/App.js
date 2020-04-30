@@ -16,15 +16,10 @@ function App() {
           margin: "50px 0px 0px",
           textAlign: "center",
           color: "#d7b94c",
-          width: "100%",
+          width: "80%",
         }}
       >
-        <h1
-          style={{
-            textAlign: "center",
-            width: "100%",
-          }}
-        >
+        <h1>
           Find me on <span>&nbsp;</span>
         </h1>
       </div>
