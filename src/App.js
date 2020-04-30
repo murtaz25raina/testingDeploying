@@ -18,7 +18,7 @@ function App() {
         outerColor="#c5c3c3"
         valueHandler={(e) => console.log(e)}
       />
-      <div style={{ marginTop: "30px" }}>made by react developer.</div>
+      <div style={{ marginTop: "30px" }}>made by react developer {"(22)"}.</div>
     </div>
   );
 }
