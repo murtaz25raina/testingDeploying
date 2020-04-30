@@ -5,7 +5,9 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <div style={{ marginBottom: "30px" }}>Range Slider Component</div>
+      <div style={{ marginBottom: "30px" }}>
+        Hi, this is a Range Slider Component
+      </div>
       <RangeSlider
         min={0}
         max={50000}
