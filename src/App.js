@@ -10,15 +10,15 @@ function App() {
       </div>
       <RangeSlider
         min={0}
-        max={50000}
-        steps={100}
+        max={50}
+        steps={1}
         stepUnit={"₹"}
         dotColor="blue"
         rangeColor="blue"
         outerColor="#c5c3c3"
         valueHandler={(e) => console.log(e)}
       />
-      <div style={{ marginTop: "30px" }}>made by react developer {"(22)"}.</div>
+      <div style={{ marginTop: "30px" }}>made by react developer {"(murtaz25raina)"}.</div>
     </div>
   );
 }
