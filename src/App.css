@@ -6,6 +6,7 @@
   height: 100%;
   flex-direction: column;
   margin: auto;
+  background: #1d1f20;
 }
 
 @media only screen and (max-width: 600px) {
@@ -27,4 +28,52 @@ body,
 #root {
   width: 100%;
   height: 100%;
+}
+h1 {
+  position: relative;
+  float: left;
+  color: #d7b94c;
+  font-family: "Inconsolata", Consolas, monospace;
+  font-size: 25px;
+}
+h1 span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #1d1f20;
+  width: 100%;
+  border-left: 0.1em solid transparent;
+  -webkit-animation: typing 3s steps(16) forwards, cursor 1s infinite;
+  animation: typing 3s steps(16) forwards, cursor 1s infinite;
+}
+/* Animation */
+@-webkit-keyframes typing {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+@-webkit-keyframes cursor {
+  50% {
+    border-color: white;
+  }
+}
+@keyframes typing {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+@keyframes cursor {
+  50% {
+    border-color: white;
+  }
+}
+.wrapper {
+  width: 80%;
+  margin: auto;
 }

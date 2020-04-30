@@ -5,7 +5,13 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <div className="topText" style={{ marginBottom: "30px" }}>
+      <div class="wrapper">
+        <h1>
+          Mateen Gowhar Raina
+          <span>&nbsp;</span>
+        </h1>
+      </div>
+      {/* <div className="topText" style={{ marginBottom: "30px" }}>
         Hi, this is a Range Slider Component. Hope you like it :)
       </div>
       <RangeSlider
@@ -20,7 +26,7 @@ function App() {
       />
       <div className="bottomText" style={{ marginTop: "30px" }}>
         made by react developer {" (murtaz25raina)"}.
-      </div>
+      </div> */}
     </div>
   );
 }
