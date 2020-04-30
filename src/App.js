@@ -1,5 +1,5 @@
 import React from "react";
-import RangeSlider from "./SliderComponent";
+// import RangeSlider from "./SliderComponent";
 import "./App.css";
 
 function App() {
