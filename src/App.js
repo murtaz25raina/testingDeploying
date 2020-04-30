@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <div style={{ marginBottom: "30px" }}>
-        Hi, this is a Range Slider Component
+        Hi, this is a Range Slider Component. Hope you like it :)
       </div>
       <RangeSlider
         min={0}
